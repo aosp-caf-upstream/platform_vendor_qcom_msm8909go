@@ -1,7 +1,8 @@
+ALLOW_MISSING_DEPENDENCIES := true
 #Go variant flag
 TARGET_HAS_LOW_RAM := true
 
-TARGET_USES_AOSP_FOR_AUDIO := false
+TARGET_USES_AOSP_FOR_AUDIO := true
 TARGET_USES_AOSP := true
 TARGET_USES_QCOM_BSP := false
 TARGET_USES_HWC2 := true
@@ -139,8 +140,6 @@ PRODUCT_COPY_FILES += \
 #fstab.qcom
 #PRODUCT_PACKAGES += fstab.qcom
 
--include $(TOPDIR)hardware/qcom/audio/configs/msm8909/msm8909.mk
-
 PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcompostprocbundle \
@@ -275,3 +274,5 @@ endif
 # Add soft home, back and multitask keys
 PRODUCT_PROPERTY_OVERRIDES += qemu.hw.mainkeys=1
 PRODUCT_PROPERTY_OVERRIDES += rild.libpath=/vendor/lib/libril-qc-qmi-1.so
+
+SDM660_DISABLE_MODULE := true
