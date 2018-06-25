@@ -100,7 +100,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 BOARD_PERSISTIMAGE_FILE_SYSTEM_TYPE := ext4
 
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.memcg=true earlyprintk androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.memcg=true earlyprintk firmware_class.path=/vendor/firmware_mnt/image
 
 BOARD_EGL_CFG := device/qcom/msm8909go/egl.cfg
 
