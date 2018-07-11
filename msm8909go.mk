@@ -73,7 +73,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
        persist.radio.multisim.config=ssss \
-       persist.cne.override.memlimit=1
+       persist.vendor.cne.override.memlimit=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
        dalvik.vm.heapminfree=6m \
