@@ -128,6 +128,10 @@ endif
 PRODUCT_COPY_FILES += \
     device/qcom/msm8909go/listen_platform_info.xml:system/etc/listen_platform_info.xml
 
+#VB xml
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.verified_boot.xml:system/etc/permissions/android.software.verified_boot.xml
+
 # Feature definition files for msm8909go
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
