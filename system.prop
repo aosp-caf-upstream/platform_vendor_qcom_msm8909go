@@ -222,3 +222,6 @@ ro.emmc_size=8GB
 
 #Split A2DP
 persist.bt.enable.splita2dp=false
+
+#Enable userspace LMK
+ro.lmk.enable_userspace_lmk=true
