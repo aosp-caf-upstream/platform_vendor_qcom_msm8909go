@@ -69,7 +69,8 @@ PRODUCT_COPY_FILES += \
     device/qcom/msm8909go/seccomp/mediaextractor-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.vidc.disable.split.mode=1
+    vendor.vidc.disable.split.mode=1 \
+    vendor.mediacodec.binder.size=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
        persist.radio.multisim.config=ssss \
