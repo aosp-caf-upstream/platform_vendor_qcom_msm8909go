@@ -83,6 +83,9 @@ mm.enable.qcom_parser=262143
 # Default to AwesomePlayer
 media.stagefright.use-awesome=false
 
+#minimum duration for offload playback in secs
+audio.offload.min.duration.secs=30
+
 #
 #Disable split mode for 8909go
 vendor.vidc.disable.split.mode=1
