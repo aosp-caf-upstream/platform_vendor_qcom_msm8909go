@@ -282,3 +282,7 @@ PRODUCT_PROPERTY_OVERRIDES += qemu.hw.mainkeys=1
 PRODUCT_PROPERTY_OVERRIDES += rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 
 SDM660_DISABLE_MODULE := true
+
+# Enable extra vendor libs
+ENABLE_EXTRA_VENDOR_LIBS := true
+PRODUCT_PACKAGES += vendor-extra-libs
