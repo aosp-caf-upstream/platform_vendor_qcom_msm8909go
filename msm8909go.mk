@@ -86,7 +86,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
        dalvik.vm.heapmaxfree=8m \
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sdm.support_writeback=0
+    vendor.display.support_writeback=0
+
 
 $(call inherit-product, device/qcom/common/common.mk)
 
