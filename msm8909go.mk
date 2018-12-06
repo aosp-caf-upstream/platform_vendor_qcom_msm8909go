@@ -291,5 +291,3 @@ SDM660_DISABLE_MODULE := true
 # Enable extra vendor libs
 ENABLE_EXTRA_VENDOR_LIBS := true
 PRODUCT_PACKAGES += vendor-extra-libs
-
-TARGET_MOUNT_POINTS_SYMLINKS := false
