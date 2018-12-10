@@ -86,7 +86,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
        dalvik.vm.heapmaxfree=8m \
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sdm.support_writeback=0
+    vendor.display.support_writeback=0
+
 
 $(call inherit-product, device/qcom/common/common.mk)
 
@@ -158,6 +159,10 @@ PRODUCT_PACKAGES += libsubsystem_control
 PRODUCT_PACKAGES += libSubSystemShutdown
 
 PRODUCT_PACKAGES += wcnss_service
+
+#FDE support
+PRODUCT_COPY_FILES += \
+    device/qcom/msm8909go/init.qti.qseecomd.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.qseecomd.sh
 
 #wlan driver
 PRODUCT_COPY_FILES += \
