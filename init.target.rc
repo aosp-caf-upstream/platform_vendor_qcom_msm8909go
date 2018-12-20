@@ -161,17 +161,17 @@ service ppd /system/vendor/bin/mm-pp-daemon
     socket pps stream 0660 system system
     group system graphics
 
-service per_mgr /vendor/bin/pm-service
+service vendor.per_mgr /vendor/bin/pm-service
     class core
     user system
     group system
 
-service imsstarter /vendor/bin/init.qti.ims.sh
+service vendor.imsstarter /vendor/bin/init.qti.ims.sh
     class main
     oneshot
 
 on property:vold.decrypt=trigger_restart_framework
-    start imsstarter
+    start vendor.imsstarter
 
 # imsqmidaemon starts with root and UID will be downgraded to SYSTEM
 service vendor.imsqmidaemon /system/vendor/bin/imsqmidaemon
