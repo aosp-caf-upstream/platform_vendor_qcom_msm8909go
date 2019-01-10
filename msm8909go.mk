@@ -102,8 +102,12 @@ ifneq (,$(strip $(wildcard $(PRODUCT_RENDERING_ENGINE_REVLIB))))
 #   MULTI_LANG_ZAWGYI := REVERIE
 endif
 
+ifneq ($(TARGET_HAS_LOW_RAM),true)
+DEVICE_FRAMEWORK_MANIFEST_FILE := device/qcom/msm8909go/framework_manifest.xml
+endif
 DEVICE_MANIFEST_FILE := device/qcom/msm8909go/manifest.xml
 DEVICE_MATRIX_FILE   := device/qcom/common/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := device/qcom/common/vendor_framework_compatibility_matrix.xml
 
 PRODUCT_PACKAGES += android.hardware.media.omx@1.0-impl
 
@@ -291,3 +295,5 @@ SDM660_DISABLE_MODULE := true
 # Enable extra vendor libs
 ENABLE_EXTRA_VENDOR_LIBS := true
 PRODUCT_PACKAGES += vendor-extra-libs
+
+TARGET_MOUNT_POINTS_SYMLINKS := false
