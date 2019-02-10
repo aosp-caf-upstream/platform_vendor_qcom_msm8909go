@@ -86,7 +86,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
        dalvik.vm.heapmaxfree=8m \
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.display.support_writeback=0
+    vendor.display.support_writeback=0 \
+    debug.sf.enable_hwc_vds=1 \
+    debug.sf.latch_unsignaled=1 \
+    debug.sf.disable_backpressure=1 \
+    vendor.display.max_blit_factor=3.1 \
+    vendor.display.disable_skip_validate=1
 
 
 $(call inherit-product, device/qcom/common/common.mk)
@@ -203,8 +208,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service \
-    android.hardware.configstore@1.0-service \
-    android.hardware.broadcastradio@1.0-impl
+    android.hardware.configstore@1.0-service
 
 ifeq ($(TARGET_HAS_LOW_RAM),true)
 TARGET_EXCLUDES_DISPLAY_PP := true

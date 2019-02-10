@@ -24,22 +24,15 @@ ro.telephony.default_network=22,20
 #Enable Camera1 API for VT calls
 persist.vendor.qti.telephony.vt_cam_interface=1
 
-debug.sf.enable_hwc_vds=1
 debug.sf.hw=1
 debug.egl.hw=1
-debug.sf.latch_unsignaled=1
-debug.sf.disable_backpressure=1
 #debug.composition.type=dyn
-debug.hwc.dynThreshold=3.1
 debug.mdpcomp.logs=0
 dalvik.vm.heapsize=36m
 dalvik.vm.zygotemaxfailedboots=5
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
-debug.sdm.support_writeback=0
 
-sdm.debug.disable_skip_validate=1
-debug.sf.recomputecrop=0
 
 #enable dirty rect
 debug.sf.swaprect=1
